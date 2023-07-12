@@ -5,8 +5,13 @@ import Navigation from "../components/global/Navigation.astro";
 import Hero from "../components/landing/Hero.astro";
 import SectionOne from "../components/landing/SectionOne.astro";
 import SectionTwo from "../components/landing/SectionTwo.astro";
+import SectionThree from "../components/landing/SectionThree.astro";
+import ImageFeatureBreakout from "../components/landing/ImageFeatureBreakout.astro";
+import ThreeUpFeatures from "../components/landing/3upfeatures.astro";
+import ImageFeature1 from "../components/landing/ImageFeature1.astro";
 import Testimonial from "../components/global/Testimonial.astro";
 import Pricing from "../components/landing/Pricing.astro";
+import Profile from "../components/landing/Profile.astro";
 import Cta from "../components/global/Cta.astro";
 import Footer from "../components/global/Footer.astro";
 import { AstroSeo } from "@astrolib/seo";
@@ -52,11 +57,14 @@ Use AstroSeo in all the pages you want different Seo than the index page
 <BaseLayout>
   <Navigation />
   <Hero />
-
-  <SectionOne />
-  <SectionTwo />
+  <SectionThree />
+  <ThreeUpFeatures />
+  <ImageFeatureBreakout />
   <Testimonial />
-  <Pricing />
   <Cta />
+  <Profile />
+  <ImageFeature1 />
+
+
   <Footer />
 </BaseLayout>

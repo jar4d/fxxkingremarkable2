@@ -3,6 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+ 
   theme: {
     fontSize: {
       xs: [
@@ -108,7 +109,12 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
 
       },
+      backgroundImage: {
+        'my_bg_image' : "url(../public/clock1.jpg)",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
+
+

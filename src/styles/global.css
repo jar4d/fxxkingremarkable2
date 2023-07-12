@@ -6,3 +6,11 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-pink-400 via-blue-500 to-purple-600;
+}
+.gradient-text-light {
+  @apply bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100;
+}
